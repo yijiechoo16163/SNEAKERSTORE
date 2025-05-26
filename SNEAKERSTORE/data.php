@@ -2,7 +2,7 @@
      $servername = "localhost";
      $username = "root";
      $password = "";
-     $database = "SNEAKERSTORE"
+     $database = "SNEAKERSTORE";
 
 $conn = new mysql($servername, $username, $password, $database);
 
@@ -27,7 +27,7 @@ if ($conn->query($sql) === TRUE) {
 
     echo "<script>alert('Checkout complete');</script>";
 
-    echo "<script>window.setTimeout(function(){ window.location.href = 'index html'; }, 1000);</script>";
+    echo "<script>window.setTimeout(function(){ window.location.href = 'index.html'; }, 1000);</script>";
 } else {
     echo "Error: " .$sql . "<br>" . $conn->error;
 }
